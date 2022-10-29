@@ -26,9 +26,16 @@ h1{
 .scores{
     display: flex;
     gap:20px;
-    align-items: center;
-    
-    
+    align-items: center; 
+}
+
+.choices{
+    font-size: 30px;
+    display: none;
+}
+
+.choices.active{
+    display: block;
 }
 
 .scores p{
@@ -56,24 +63,23 @@ h1{
     margin: 30px;
 }
 
+.options button.active{
+    transform: scale(1.2);
+}
+
 .options button img{
     width: 200px;
     height: 250px;
+    pointer-events: none;
     
-}
-
-.choices{
-    font-size: 30px;
 }
 
 .result-text{
     font-size: 40px;
-    background: green;
     width: 50%;
     text-align: center;
     padding: 10px;
     border-radius: 15px;
-    color: white;
 }
 
 .reset-game{
@@ -83,8 +89,12 @@ h1{
     padding: 5px 20px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    display: none;
 }
 
+.reset-game.active{
+    display: block;
+}
 .reset-game:hover{
     background: rgba(49,49,49,0.876);
     

@@ -12,19 +12,20 @@
 
     <div class="scores">
         <p class="player">PLAYER</p>
-        <span class="player-points">0</span>
-        <span class="computer-points">0</span>
+        <span class="player-points"></span>
+        <span class="computer-points"></span>
         <p class="computer">COMP</p>
     </div>
     <section class="options">
-        <button><img src="src/images/rock-image.png" alt=""></button>
-        <button><img src="src/images/paper-image.png" alt=""></button>
-        <button><img src="src/images/scissors-image.png" alt=""></button>
+        <button data-option="ROCK"><img src="src/images/rock-image.png" alt=""></button>
+        <button data-option="PAPER"><img src="src/images/paper-image.png" alt=""></button>
+        <button data-option="SCRISSORS"><img src="src/images/scissors-image.png" alt=""></button>
     </section>
-    <div class="choices"></div>
-    <p class="player">player choice: <span class="player-choice"></span>ROCK</p>
-    <p class="player">computer choice: <span class="computer-choice"></span>ROCK</p>
-    <p class="result-text">You won!</p>
+    <div class="choices">
+    <p class="player-p">player choice: <span class="player-choice"></span></p>
+    <p class="computer-p">computer choice: <span class="computer-choice"></span></p>
+</div>
+    <p class="result-text"></p>
     <button class="reset-game">Reset Game</button>
     <script src="app.js"></script>
 </body>
