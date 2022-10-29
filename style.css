@@ -14,6 +14,10 @@ body{
     color:rgb(66, 63, 63);
 }
 
+button{
+    cursor: pointer;
+}
+
 h1{
     font: 36px;
     letter-spacing: 2px;
@@ -21,4 +25,67 @@ h1{
 
 .scores{
     display: flex;
+    gap:20px;
+    align-items: center;
+    
+    
+}
+
+.scores p{
+    
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.computer{
+    background: blue;
+}
+
+.player{
+    background: green;
+}
+
+.scores span{
+    font-size: 35px;
+}
+
+.options button{
+    border: none;
+    margin: 30px;
+}
+
+.options button img{
+    width: 200px;
+    height: 250px;
+    
+}
+
+.choices{
+    font-size: 30px;
+}
+
+.result-text{
+    font-size: 40px;
+    background: green;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.reset-game{
+    background: rgb(49,49,49);
+    color: white;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.reset-game:hover{
+    background: rgba(49,49,49,0.876);
+    
 }
