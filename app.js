@@ -50,7 +50,7 @@ checkResult();
 function checkResult(){
     let winner=''
 
-    if(playerChoice==='ROCK'&& compChoice==='SCISSORS' ||playerChoice==='PAPER'&&compChoice==='ROCK' ||playerChoice==='SCRISSORS'&& compChoice==='PAPER'){
+    if(playerChoice==='ROCK'&& compChoice==='SCISSORS' ||playerChoice==='PAPER'&&compChoice==='ROCK' ||playerChoice==='SCISSORS'&& compChoice==='PAPER'){
         resultText.classList.add('player');
         winner= 'YOU WON!'
         playerPoints++;
