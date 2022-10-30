@@ -5,13 +5,14 @@
 }
 
 body{
+    height: 100vh;
     width: 1000px;
-    margin: 30px auto;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    color:rgb(66, 63, 63);
+    background: linear-gradient(45deg,rgba(17, 17, 17, 0.514),rgba(0, 0, 0, 0.99));
 }
 
 button{
@@ -21,6 +22,7 @@ button{
 h1{
     font: 36px;
     letter-spacing: 2px;
+    color:rgb(209, 215, 160)    
 }
 
 .scores{
@@ -32,6 +34,7 @@ h1{
 .choices{
     font-size: 30px;
     display: none;
+    color:white;
 }
 
 .choices.active{
@@ -39,7 +42,6 @@ h1{
 }
 
 .scores p{
-    
     padding: 10px 20px;
     color: white;
     border-radius: 10px;
@@ -56,11 +58,19 @@ h1{
 
 .scores span{
     font-size: 35px;
+    color:white;
 }
 
 .options button{
-    border: none;
+    width: 200px;
+    height: 240px;
+    border-radius: 20px;
+    
     margin: 30px;
+    transition: 0.3s ease-in-out;
+}
+.options button:hover{
+    transform:scale(1.01)
 }
 
 .options button.active{
@@ -69,9 +79,9 @@ h1{
 
 .options button img{
     width: 200px;
-    height: 250px;
+    height: 240px;
     pointer-events: none;
-    
+    border-radius: 20px;   
 }
 
 .result-text{
@@ -80,10 +90,11 @@ h1{
     text-align: center;
     padding: 10px;
     border-radius: 15px;
+    color: white;
 }
 
 .reset-game{
-    background: rgb(49,49,49);
+    background: rgb(7, 106, 60);
     color: white;
     font-size: 18px;
     padding: 5px 20px;
@@ -96,6 +107,32 @@ h1{
     display: block;
 }
 .reset-game:hover{
-    background: rgba(49,49,49,0.876);
-    
+    background: rgba(7, 106, 60,0.75);
+}
+
+.reset-points{
+    background: rgb(214, 12, 66);
+    color: white;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+.reset-points:hover{
+    background: rgb(214, 12, 66,0.75);
+}
+
+.reset-points.active{
+    display: block;
+}
+.player{
+    background-color: green;
+    color:white;
+}
+
+.computer{
+    background-color: rgb(97, 10, 10);
+    color:white;
 }
