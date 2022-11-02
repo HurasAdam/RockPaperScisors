@@ -49,8 +49,8 @@ checkResult();
 // checking who won//
 function checkResult(){
     let winner=''
-
-    if(playerChoice==='ROCK'&& compChoice==='SCISSORS' ||playerChoice==='PAPER'&&compChoice==='ROCK' ||playerChoice==='SCISSORS'&& compChoice==='PAPER'){
+const condition= playerChoice==='ROCK'&& compChoice==='SCISSORS' ||playerChoice==='PAPER'&&compChoice==='ROCK' ||playerChoice==='SCISSORS'&& compChoice==='PAPER';
+    if(condition){
         resultText.classList.add('player');
         winner= 'YOU WON!'
         playerPoints++;
